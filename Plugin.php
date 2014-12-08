@@ -23,10 +23,10 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name' => 'GeoLocaleSwitcher',
-            'description' => 'Provides language switching with MaxMind GeoIP Database',
+            'name' => 'voipdeploy.geolocaleswitcher::lang.plugin.name', //GeoLocaleSwitcher
+            'description' => 'voipdeploy.geolocaleswitcher::lang.plugin.description', //Provides language switching with MaxMind GeoIP Database
             'author' => 'Voipdeploy',
-            'icon' => 'icon-leaf'
+            'icon' => 'icon-globe'
         ];
     }
 
