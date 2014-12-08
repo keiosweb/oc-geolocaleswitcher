@@ -1,0 +1,21 @@
+{
+    "name": "voipdeploy/geolocaleswitcher",
+    "description": "OctoberCMS Plugin for geo-ip based locale switching.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lukasz",
+            "email": "lukasz@c-call.eu"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/voipdeploy/laravel-4-geoip"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "voipdeploy/geoip": "~0.1-dev"
+    }
+}
