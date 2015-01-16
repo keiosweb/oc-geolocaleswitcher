@@ -58,7 +58,7 @@ class Plugin extends PluginBase
 
         $isoCodeFromIP = strtolower($location['isoCode']);
 
-        $backendUri = Config::get('cms.backendUri');
+        $backendUri = str_replace('/', '', Config::get('cms.backendUri'));
 
         if (array_key_exists($isoCodeFromIP, $availableLocales) && (strpos(Request::path(), $backendUri) === false) && (!array_key_exists($firstSegment, $availableLocales))) {
             Redirect::to($isoCodeFromIP . Request::getRequestUri())->withInput()->send();
