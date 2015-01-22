@@ -21,8 +21,8 @@ class GeoLocaleSwitcher extends ComponentBase
     {
         return [
             'localeChangePage' => [
-                'title' => 'voipdeploy.geolocaleswitcher::lang.component.localeChangePage.title',
-                'description' => 'voipdeploy.geolocaleswitcher::lang.component.localeChangePage.description',
+                'title' => 'voipdeploy.geolocaleswitcher::lang.component.langpage_title',
+                'description' => 'voipdeploy.geolocaleswitcher::lang.component.langpage_description',
                 'type' => 'dropdown'
             ]
         ];

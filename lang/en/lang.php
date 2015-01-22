@@ -10,13 +10,9 @@ return [
 
 'component' => [
 'title' => 'Show GeoLocale',
-'description' => 'Show visitor\'s country and current locale'
-
-],
-
-'localeChangePage' => [
-'title' => 'Change Locale',
-'description' => 'Switch language page'
+'description' => 'Show visitor\'s country and current locale',
+'langpage_title' => 'Change Locale Page',
+'langpage_description' => 'Page with language switcher'
 
 ],
 

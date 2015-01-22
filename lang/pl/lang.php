@@ -10,13 +10,9 @@ return [
 
 'component' => [
 'title' => 'Kraj i Język',
-'description' => 'Wyświetla kraj odwiedzjającego i aktywny język'
-
-],
-
-'localeChangePage' => [
-'title' => 'Zmień język',
-'description' => 'Strona zmiany języka'
+'description' => 'Wyświetla kraj odwiedzjającego i aktywny język',
+'langpage_title' => 'Strona Zmień język',
+'langpage_description' => 'Strona służąca do zmiany języka'
 
 ],
 
