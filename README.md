@@ -1,6 +1,8 @@
 GeoLocale Switcher
 --------------
 
+**Link to company repo: http://gitlab.c-call.eu/october_plugins/geolocaleswitcher**
+
 This is a very simple OctoberCMS plugin that automatically detects the country of the visitor and switch the website to appropriate language (basing on the iso code). If there is no language for given country - default language is triggered. If the visitor switches the language, the decision is remembered. 
 
 By default, it uses free IP database (mmdb format). 
