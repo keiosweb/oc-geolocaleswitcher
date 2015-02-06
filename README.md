@@ -1,14 +1,18 @@
 GeoLocale Switcher
 --------------
 
-This is a very simple plugin that automatically detects the country of the visitor and switch the website to appropriate language (basing on the iso code). If there is no language for given country - default language is triggered. If the visitor switches the language, the decision is remembered. 
+This is a very simple OctoberCMS plugin that automatically detects the country of the visitor and switch the website to appropriate language (basing on the iso code). If there is no language for given country - default language is triggered. If the visitor switches the language, the decision is remembered. 
 
 By default, it uses free IP database (mmdb format). 
 
 Any suggestions about development of this plugin are highly welcome.
 
-GeoLocale Switcher documentation
---------------
+
+####Warning
+
+If you use the plugin from OctoberCMS Market, please do not use this repository. Voipdeploy brand is merging with Keios and this version of the plugin has all namespaces and table names replaced. As soon as our brand is upgraded in OctoberCMS Market, we will remove this notice.
+
+
 ####About
 Plugin usage is very simple. It works when it's installed and enabled. If you want to stop using it - disable it or remove it. 
 It forwards the visitor to appropriate language version of the website, basing on the detected location:
@@ -24,7 +28,7 @@ When visitor from United States, Poland or China is detected, plugin triggers we
 You can find examplary usage on http://demo.keios.net.pl/
 
 ####Database
-Database is stored in voipdeploy/geolocaleswitcher/database/database.mmdb
+Database is stored in keios/geolocaleswitcher/database/database.mmdb
 
 It has Creative Commons Attribution-ShareAlike 3.0 Unported License
 

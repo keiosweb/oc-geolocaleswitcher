@@ -1,4 +1,4 @@
-<?php namespace Voipdeploy\Geolocaleswitcher\Components;
+<?php namespace Keios\Geolocaleswitcher\Components;
 
 use RainLab\Translate\Classes\Translator;
 use RainLab\Translate\Models\Locale;
@@ -12,8 +12,8 @@ class GeoLocaleSwitcher extends ComponentBase
     public function componentDetails()
     {
         return [
-            'name' => 'voipdeploy.geolocaleswitcher::lang.component.title', //GeoLocaleSwitcher
-            'description' => 'voipdeploy.geolocaleswitcher::lang.component.description' //Displays locale switcher with current geoIP country
+            'name' => 'keios.geolocaleswitcher::lang.component.title', //GeoLocaleSwitcher
+            'description' => 'keios.geolocaleswitcher::lang.component.description' //Displays locale switcher with current geoIP country
         ];
     }
 
@@ -21,8 +21,8 @@ class GeoLocaleSwitcher extends ComponentBase
     {
         return [
             'localeChangePage' => [
-                'title' => 'voipdeploy.geolocaleswitcher::lang.component.langpage_title',
-                'description' => 'voipdeploy.geolocaleswitcher::lang.component.langpage_description',
+                'title' => 'keios.geolocaleswitcher::lang.component.langpage_title',
+                'description' => 'keios.geolocaleswitcher::lang.component.langpage_description',
                 'type' => 'dropdown'
             ]
         ];

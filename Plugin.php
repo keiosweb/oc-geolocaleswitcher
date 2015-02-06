@@ -1,4 +1,4 @@
-<?php namespace Voipdeploy\GeoLocaleSwitcher;
+<?php namespace Keios\GeoLocaleSwitcher;
 
 use RainLab\Translate\Models\Locale as LocaleModel;
 use RainLab\Translate\Classes\Translator;
@@ -23,9 +23,9 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name' => 'voipdeploy.geolocaleswitcher::lang.plugin.name', //GeoLocaleSwitcher
-            'description' => 'voipdeploy.geolocaleswitcher::lang.plugin.description', //Provides language switching with MaxMind GeoIP Database
-            'author' => 'Voipdeploy',
+            'name' => 'keios.geolocaleswitcher::lang.plugin.name', //GeoLocaleSwitcher
+            'description' => 'keios.geolocaleswitcher::lang.plugin.description', //Provides language switching with MaxMind GeoIP Database
+            'author' => 'Keios',
             'icon' => 'icon-globe'
         ];
     }
@@ -33,7 +33,7 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            'Voipdeploy\GeoLocaleSwitcher\Components\GeoLocaleSwitcher' => 'geoLocaleSwitcher'
+            'Keios\GeoLocaleSwitcher\Components\GeoLocaleSwitcher' => 'geoLocaleSwitcher'
         ];
     }
 
@@ -44,11 +44,11 @@ class Plugin extends PluginBase
             $firstSegment = Request::segment(1);
             $availableLocales = LocaleModel::listAvailable();
 
-            App::register('Voipdeploy\GeoIP\GeoIPServiceProvider');
+            App::register('Keios\GeoIP\GeoIPServiceProvider');
 
             Config::set('geoip::service', 'maxmind');
             Config::set('geoip::maxmind.type', 'database');
-            Config::set('geoip::maxmind.database_path', base_path() . '/plugins/voipdeploy/geolocaleswitcher/database/database.mmdb');
+            Config::set('geoip::maxmind.database_path', base_path() . '/plugins/keios/geolocaleswitcher/database/database.mmdb');
 
             if (Session::has(Translator::SESSION_LOCALE)) {
                 return;
